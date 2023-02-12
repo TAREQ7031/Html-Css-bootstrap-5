@@ -1,0 +1,176 @@
+*{
+
+    float: left;
+    box-sizing: border-box;
+    margin: 10px;
+}
+.box-one{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border-radius: 0 0 100px 100px;
+
+}
+.box-two{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    border-radius: 100px 100px 0 0;
+}
+.div-one{
+    height: 200px;
+    width: 300px;
+
+    background-color: orange;
+    animation-name: bitm;
+    animation-duration: 2s;
+    animation-iteration-count: 10;
+    animation-delay: 2s;
+
+}
+
+@keyframes bitm {
+
+    from{
+        background-color: orange;
+    }
+    to{
+        background-color: red;
+    }
+}
+
+.div-two{
+    height: 200px;
+    width: 300px;
+
+    background-color: orange;
+
+
+}
+.div-two:hover {
+
+    animation-name: tareq;
+    animation-duration: 2s;
+    animation-iteration-count: 10;
+    animation-delay: 2s;
+
+
+}
+
+@keyframes tareq {
+
+    0%{
+        background-color: orange;
+        width: 300px;
+    }
+    50%{
+        background-color: red;
+        width: 600px;
+    }
+    100%{
+        background-color: black;
+        width: 900px;
+    }
+}
+.div-three{
+    height: 300px;
+    width: 600px;
+    background-color: darkblue;
+    animation-name: imagesilder;
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes imagesilder {
+    0%{
+        background-image: url("../images/images (10).jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    25%{
+        background-image: url("../images/image1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    50%{
+        background-image: url("../images/images (2).jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    100%{
+        background-image: url("../images/images (3).jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+}
+.row:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.div-four{
+    height: 300px;
+    width: 300px;
+    /*background-color: chocolate;*/
+    background-image: url("../images/images.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 3s;
+}
+.div-four:hover {
+    transform: scale(1.5,-2);
+}
+.div-five {
+    height: 300px;
+    width: 300px;
+    background-color: lightblue;
+}
+.div-five:hover {
+    transform: rotate(95deg);
+}
+.div-six {
+    height: 300px;
+    width: 300px;
+    background-color: purple;
+    transition: 1s;
+}
+.div-six:hover {
+    transform: translate(20px,20px);
+}
+.div-seven {
+    height: 300px;
+    width: 100px;
+    background-color: green;
+    transition: 1s;
+}
+.div-seven:hover {
+    transform: skew(20deg);
+}
+.div-eight {
+    height: 300px;
+    width: 300px;
+    background-color: darkred;
+    transition: 1s;
+    transform: skewY(45deg);
+    margin-top: 140px;
+}
+/*.div-eight:hover {*/
+/*    transform: skewX(45deg);*/
+/*    margin-top: 50px;*/
+/*}*/
+.div-nine {
+    height: 300px;
+    width: 300px;
+    background-color: yellowgreen;
+    transition: 1s;
+    transform: skewY(-45deg);
+    margin-top: 140px;
+}
+/*.div-nine:hover {*/
+/*    transform: s;*/
+/*}*/
